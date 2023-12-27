@@ -29,8 +29,4 @@ public class ScaleShapeCommand implements Command {
         var shape = this.canvas.getShapeById(shapeId);
         shape.setScale(shape.getScale() / this.scale);
     }
-
-    @Override
-    public void reExecute() {
-    }
 }

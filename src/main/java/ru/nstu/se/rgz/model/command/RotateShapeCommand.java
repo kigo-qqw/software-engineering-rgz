@@ -29,8 +29,4 @@ public class RotateShapeCommand implements Command {
         var shape = this.canvas.getShapeById(shapeId);
         shape.setRotation(shape.getRotation() - this.angle);
     }
-
-    @Override
-    public void reExecute() {
-    }
 }

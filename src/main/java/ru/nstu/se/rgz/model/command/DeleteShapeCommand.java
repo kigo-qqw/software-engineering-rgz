@@ -28,8 +28,4 @@ public class DeleteShapeCommand implements Command {
     public void unExecute() {
         this.canvas.addShape(this.shape);
     }
-
-    @Override
-    public void reExecute() {
-    }
 }

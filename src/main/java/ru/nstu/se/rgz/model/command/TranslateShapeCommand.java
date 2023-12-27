@@ -36,8 +36,4 @@ public class TranslateShapeCommand implements Command {
         shape.setX(shape.getX() - this.byX);
         shape.setY(shape.getY() - this.byY);
     }
-
-    @Override
-    public void reExecute() {
-    }
 }

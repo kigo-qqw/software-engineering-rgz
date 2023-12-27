@@ -27,9 +27,4 @@ public class CreateShapeCommand implements Command {
     public void unExecute() {
         this.canvas.deleteShapeById(this.shapeId);
     }
-
-    @Override
-    public void reExecute() {
-
-    }
 }
