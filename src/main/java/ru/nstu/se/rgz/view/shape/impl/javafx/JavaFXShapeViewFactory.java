@@ -22,9 +22,6 @@ public class JavaFXShapeViewFactory implements ShapeViewFactory {
 
     @Override
     public ShapeView fromShape(int shapeId, Shape shape) {
-        System.out.println("fromShape");
-        System.out.println(this.canvasView);
-
         Class<? extends JavaFXShapeView> shapeViewClass = this.transformations.get(shape.getClass());
         if (shapeViewClass == null) throw new RuntimeException("illegal shape");
         try {
